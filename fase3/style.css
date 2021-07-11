@@ -8,21 +8,21 @@
 }
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: rgb(206, 183, 183);
+    background-color: rgb(181, 204, 245);
 }
 
 .menu {
-    background-color: brown;
+    background-color: rgb(30, 39, 126);
     height: 75px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid  rgb(206, 206, 206);
-    box-shadow: 5px 0 10px  darkred;
+    border-bottom: 1px solid  rgb(121, 209, 236);
+    box-shadow: 5px 0 10px  rgb(33, 32, 121);
 }
 .logo {
-    color: rgb(2, 1, 1);
+    color: rgb(14, 218, 245);
     font-size: 35px;
     padding: 0 80px;
     font-weight: bold;
@@ -45,11 +45,11 @@ body {
     font-size: 18px;
     display: block;
     text-transform: uppercase;
-    color: thistle;
+    color: rgb(159, 233, 248);
 }
 
 .menu_items li:hover, li.active {
-    background-color: white;
+    background-color: rgb(6, 136, 223);
     transition: 1s;
 }
 
@@ -57,11 +57,11 @@ body {
     margin-right: 3px;
     font-size: 25px;
     cursor: pointer;
-    color: white;
+    color: rgb(11, 199, 247);
     display: none;
 }
 
-ul.mostrar {
+ul.show {
     top: 65px;
 
 }
@@ -85,4 +85,67 @@ ul.mostrar {
     .btn_menu{
         display: inline-flex;
     }
+    .menu_items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: #222746;
+        top: 100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .menu_items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+
+    }
+    .menu_items li :hover{
+        background: none;
+
+    }
+
+    .menu_items li a{
+        font-size: 20px;
+        color: aliceblue;
+        font-weight: bold;
+    }
+    .menu_items li a :hover{
+        color: rgb(100, 210, 253);
+    }
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+@media  screen and (max-width: 858px) and (orientation: landscape) {
+    .menu_items li {
+    overflow: scroll;
+    height:  cal(100% - 65px);
+} 
+}
+
+
+.sub {
+    display: none;
+    position: absolute;
+    padding: 7px 13 px;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(159, 233, 248);
+    background-color:rgb(8, 144, 235);
+    
+}
+
+nav ul li:hover ul {
+    display: block;
+    background: rgb(63, 100, 124));
+    border-radius: 3px;
+    margin: 0 5px;
+    padding: 7px 13 px;
+    text-decoration: none;
+    font-size: 18px;
+    list-style: none;
+
 }
