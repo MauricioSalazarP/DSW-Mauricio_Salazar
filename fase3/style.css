@@ -140,12 +140,19 @@ ul.show {
 
 nav ul li:hover ul {
     display: block;
-    background: rgb(63, 100, 124));
+    background: rgb(30, 39, 126);
     border-radius: 3px;
     margin: 0 5px;
     padding: 7px 13 px;
     text-decoration: none;
     font-size: 18px;
     list-style: none;
-
 }
+
+.section {
+    background: #000;
+    display: flex;
+}
+    .articulos{
+        flex: 2 1 auto;
+    }
