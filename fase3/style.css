@@ -9,6 +9,8 @@
 body {
     font-family: 'Oswald', sans-serif;
     background-color: rgb(181, 204, 245);
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .menu {
@@ -117,6 +119,7 @@ ul.show {
         font-size: 25px;
         padding-left: 35px;
     }
+
 }
 @media  screen and (max-width: 858px) and (orientation: landscape) {
     .menu_items li {
@@ -154,5 +157,65 @@ nav ul li:hover ul {
     display: flex;
 }
     .articulos{
-        flex: 2 1 auto;
+    display: flex;
+    flex: 2 1 auto;
+    background: rgb(173, 224, 248);  
     }
+    .publicidad {
+    display: flex;
+    flex: 1 5 auto;
+    background: rgb(219, 0, 0); 
+    height:  100%;    
+    }
+    .article{
+    max-width: 94%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;   
+    }
+
+
+@media all and (max-width:858px) {
+    .section{
+        flex-direction: column;
+    }
+    .publicidad{
+        flex-direction: column;
+    }
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+.final {
+    background: rgb(30, 39, 126);
+    width: 100vw;
+    border-radius: 3px;
+    padding: 3px 0%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  rgb(121, 209, 236);
+    box-shadow: 5px 0 10px  rgb(33, 32, 121);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2px;
+    flex-direction: column;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aqua;
+    border: #000;
+    
+}
+
+.article img {
+    max-width: 94%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
