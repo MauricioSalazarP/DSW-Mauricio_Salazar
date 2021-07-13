@@ -173,8 +173,18 @@ nav ul li:hover ul {
     align-items: center;
     justify-content: space-between;
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    padding: 10px;   
     }
+
+.bibliografia {
+    max-width: 94%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap; 
+}
 
 
 @media all and (max-width:858px) {
@@ -186,6 +196,16 @@ nav ul li:hover ul {
     }
     .articulos {
         flex-direction: column;
+    }
+
+
+    .bibliografia {
+        max-width: 94%;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap; 
     }
 }
 
@@ -218,4 +238,16 @@ nav ul li:hover ul {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    padding: 15px;
+}
+
+.bibliografia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.aside {
+    height: 50%;
 }
