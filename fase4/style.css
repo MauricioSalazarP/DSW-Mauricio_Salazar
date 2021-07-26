@@ -1,0 +1,253 @@
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(181, 204, 245);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.menu {
+    background-color: rgb(30, 39, 126);
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  rgb(121, 209, 236);
+    box-shadow: 5px 0 10px  rgb(33, 32, 121);
+}
+.logo {
+    color: rgb(14, 218, 245);
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+.menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+
+}
+
+.menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu_items li a {
+    padding: 7px 13 px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: rgb(159, 233, 248);
+}
+
+.menu_items li:hover, li.active {
+    background-color: rgb(6, 136, 223);
+    transition: 1s;
+}
+
+.btn_menu {
+    margin-right: 3px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(11, 199, 247);
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+
+}
+
+@media screen and (max-width: 952px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    .menu_items li a {
+        font-size: 16px;
+
+    }
+
+}
+
+@media screen and (max-width:858px) {
+    .menu{
+        height: 65px;
+    }
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menu_items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: #222746;
+        top: 100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .menu_items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+
+    }
+    .menu_items li :hover{
+        background: none;
+
+    }
+
+    .menu_items li a{
+        font-size: 20px;
+        color: aliceblue;
+        font-weight: bold;
+    }
+    .menu_items li a :hover{
+        color: rgb(100, 210, 253);
+    }
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+
+}
+@media  screen and (max-width: 858px) and (orientation: landscape) {
+    .menu_items li {
+    overflow: scroll;
+    height:  cal(100% - 65px);
+} 
+}
+
+
+.sub {
+    display: none;
+    position: absolute;
+    padding: 7px 13 px;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(159, 233, 248);
+    background-color:rgb(8, 144, 235);
+    
+}
+
+nav ul li:hover ul {
+    display: block;
+    background: rgb(30, 39, 126);
+    border-radius: 3px;
+    margin: 0 5px;
+    padding: 7px 13 px;
+    text-decoration: none;
+    font-size: 18px;
+    list-style: none;
+}
+
+.section {
+    background: #000;
+    display: flex;
+}
+    .articulos{
+    display: flex;
+    flex: 2 1 auto;
+    background: rgb(173, 224, 248);  
+    }
+    .publicidad {
+    display: flex;
+    flex: 1 5 auto;
+    background: rgb(219, 0, 0); 
+    height:  100%;    
+    }
+    .article{
+    max-width: 94%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;   
+    }
+
+.bibliografia {
+    max-width: 94%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+@media all and (max-width:858px) {
+    .section{
+        flex-direction: column;
+    }
+    .publicidad{
+        flex-direction: column;
+    }
+    .articulos {
+        flex-direction: column;
+    }
+
+
+    .bibliografia {
+        max-width: 94%;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+}
+
+.final {
+    background: rgb(30, 39, 126);
+    width: 100vw;
+    border-radius: 3px;
+    padding: 3px 0%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  rgb(121, 209, 236);
+    box-shadow: 5px 0 10px  rgb(33, 32, 121);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2px;
+    flex-direction: column;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aqua;
+    border: #000;
+    
+}
+
+.article img {
+    max-width: 94%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.bibliografia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.aside {
+    height: 50%;
+}
