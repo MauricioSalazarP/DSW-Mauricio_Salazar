@@ -13,6 +13,12 @@ body {
     height: 100%;
 }
 
+.shadow-none {
+    width: 100%;
+
+}
+
+
 .menu {
     background-color: rgb(30, 39, 126);
     height: 75px;
